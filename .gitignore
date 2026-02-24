@@ -1,3 +1,27 @@
 .idea
 .claude
 *.class
+
+# Compiled binaries
+fibonacci
+fibonacci_c
+fibonacci_cpp
+fibonacci_rust
+
+# C/C++ object files
+*.o
+*.out
+
+# Rust
+*.rlib
+*.d
+*.pdb
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out

@@ -6,11 +6,15 @@
 
 | 语言 | 命令 |
 |------|------|
+| C | `gcc fibonacci.c -o fibonacci && ./fibonacci` |
+| C++ | `g++ fibonacci.cpp -o fibonacci && ./fibonacci` |
 | Go | `go run fibonacci.go` |
 | Java | `javac Fibonacci.java && java Fibonacci` |
 | JavaScript | `node fibonacci.js` |
 | PHP | `php fibonacci.php` |
+| Python | `python fibonacci.py` |
 | Ruby | `ruby fibonacci.rb` |
+| Rust | `rustc fibonacci.rs && ./fibonacci` |
 
 ## 基准测试结果
 
