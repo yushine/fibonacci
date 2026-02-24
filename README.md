@@ -22,7 +22,22 @@ Recursive Fibonacci sequence implementations across multiple programming languag
 
 ## Benchmark Results
 
-Execution time for calculating fibonacci(30):
+Execution time for calculating fibonacci(30) (tested on macOS Darwin 25.2.0):
+
+| Language | Version | Execution Time |
+|----------|---------|----------------|
+| Go | go1.23.6 | ~4.1 ms |
+| Swift | 6.0.2 | 4.466 ms |
+| C | clang 18.1.8 | 5.430 ms |
+| C++ | clang 18.1.8 | 5.708 ms |
+| Rust | 1.84.1 | ~8.0 ms |
+| Java | openjdk 23.0.1 | 12.335 ms |
+| JavaScript | Node v22.20.0 | 45 ms |
+| PHP | 8.3.14 | 83.285 ms |
+| Ruby | 3.3.6 | 96.925 ms |
+| Python | 3.13.2 | 159.228 ms |
+
+### Historical Results (Original Test)
 
 | Language Version | Execution Time |
 |------------------|----------------|
