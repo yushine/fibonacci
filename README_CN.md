@@ -13,7 +13,7 @@
 | Go | `go run fibonacci.go` |
 | Java | `javac Fibonacci.java && java Fibonacci` |
 | JavaScript | `node fibonacci.js` |
-| Kotlin | `kotlinc fibonacci.kt -script` |
+| Kotlin | `kotlinc -script fibonacci.kts` |
 | PHP | `php fibonacci.php` |
 | Python | `python fibonacci.py` |
 | Ruby | `ruby fibonacci.rb` |
@@ -28,6 +28,7 @@
 |------|------|----------|
 | Go | go1.23.6 | ~4.1 ms |
 | Swift | 6.0.2 | 4.466 ms |
+| Kotlin | 2.1.0 | 4 ms |
 | C | clang 18.1.8 | 5.430 ms |
 | C++ | clang 18.1.8 | 5.708 ms |
 | Rust | 1.84.1 | ~8.0 ms |
@@ -36,6 +37,8 @@
 | PHP | 8.3.14 | 83.285 ms |
 | Ruby | 3.3.6 | 96.925 ms |
 | Python | 3.13.2 | 159.228 ms |
+| Dart | - | 10.414 ms |
+| C# | - | 未测试 |
 
 ### 历史测试结果（原始数据）
 
