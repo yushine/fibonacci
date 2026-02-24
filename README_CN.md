@@ -7,14 +7,18 @@
 | 语言 | 命令 |
 |------|------|
 | C | `gcc fibonacci.c -o fibonacci && ./fibonacci` |
+| C# | `dotnet run` (需要项目配置) |
 | C++ | `g++ fibonacci.cpp -o fibonacci && ./fibonacci` |
+| Dart | `dart run fibonacci.dart` |
 | Go | `go run fibonacci.go` |
 | Java | `javac Fibonacci.java && java Fibonacci` |
 | JavaScript | `node fibonacci.js` |
+| Kotlin | `kotlinc fibonacci.kt -script` |
 | PHP | `php fibonacci.php` |
 | Python | `python fibonacci.py` |
 | Ruby | `ruby fibonacci.rb` |
 | Rust | `rustc fibonacci.rs && ./fibonacci` |
+| Swift | `swift fibonacci.swift` |
 
 ## 基准测试结果
 

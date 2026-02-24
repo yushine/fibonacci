@@ -17,6 +17,24 @@ fibonacci_rust
 *.d
 *.pdb
 
+# Swift
+*.swiftmodule
+*.swiftdoc
+*.dSYM
+
+# Kotlin
+*.class
+*.ktrenv
+
+# Dart
+.dart_tool
+.packages
+
+# C# / .NET
+bin/
+obj/
+*.dll
+
 # Go
 *.exe
 *.exe~
