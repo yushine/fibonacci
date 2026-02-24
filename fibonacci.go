@@ -1,31 +1,23 @@
-/**
- * go version go1.5.1 darwin/amd64
- *
- * 1st: 6.847421ms
- * 2nd: 6.953043ms
- * 3rd: 6.877671ms
- *
- */
-
 package main
-import "fmt"
-import "time"
- 
+
+import (
+	"fmt"
+	"time"
+)
+
 func main() {
-  start := time.Now()
-  fmt.Println(start)
+	start := time.Now()
 
-  fmt.Printf("%d\n", fibonacci(30))
+	result := fibonacci(30)
+	fmt.Printf("Result: %d\n", result)
 
-  end := time.Now()
-  fmt.Println(end)
-
-  fmt.Println(end.Sub(start))
+	elapsed := time.Since(start)
+	fmt.Printf("Time: %v\n", elapsed)
 }
- 
-func fibonacci(num int) int {
-  if num < 2 {
-    return num
-  }
-  return fibonacci(num-1) + fibonacci(num-2)
+
+func fibonacci(n int) int {
+	if n < 2 {
+		return n
+	}
+	return fibonacci(n-1) + fibonacci(n-2)
 }

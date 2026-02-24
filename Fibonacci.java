@@ -1,36 +1,19 @@
-/**
- * java version "1.8.0_20"
- * Java(TM) SE Runtime Environment (build 1.8.0_20-b26)
- * Java HotSpot(TM) 64-Bit Server VM (build 25.20-b23, mixed mode)
- *
- * 1st: 0.014
- * 2nd: 0.014
- * 3rd: 0.014
- *
- */
-
-import java.util.Calendar;
-
 public class Fibonacci {
 
     public static void main(String[] args) {
+        long startTime = System.nanoTime();
 
-        double startTimestamp = Calendar.getInstance().getTime().getTime();
+        int result = fibonacci(30);
+        System.out.println("Result: " + result);
 
-        System.out.println(fibonacci(30));
-
-        double endTimestamp = Calendar.getInstance().getTime().getTime();
-
-        double diffTime = endTimestamp - startTimestamp;
-
-        System.out.println(startTimestamp);
-        System.out.println(endTimestamp);
-        System.out.println(diffTime / 1000);
+        long endTime = System.nanoTime();
+        double elapsedMs = (endTime - startTime) / 1_000_000.0;
+        System.out.printf("Time: %.3f ms\n", elapsedMs);
     }
 
     public static int fibonacci(int n) {
-        if (n <= 2) {
-            return 1;
+        if (n < 2) {
+            return n;
         }
         return fibonacci(n - 1) + fibonacci(n - 2);
     }

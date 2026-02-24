@@ -1,30 +1,15 @@
-/**
- * Node version: v4.2.2
- *
- * 1st: 0.029000043869018555
- * 2nd: 0.029999971389770508
- * 3rd: 0.03000020980834961
- *
- */
-
 function fibonacci(n) {
-  if (n == 1 || n == 0) {
+  if (n < 2) {
     return n;
   }
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-function getTimeStamp() {
-  var time = new Date().getTime();
-  return time / 1000;
-}
+const startTime = Date.now();
 
-var startTime = getTimeStamp();
-console.log(startTime);
+const result = fibonacci(30);
+console.log(`Result: ${result}`);
 
-fibonacci(30);
-
-var endTime = getTimeStamp();
-console.log(endTime);
-
-console.log(endTime - startTime);
+const endTime = Date.now();
+const elapsedMs = endTime - startTime;
+console.log(`Time: ${elapsedMs} ms`);
