@@ -1,6 +1,3 @@
-import kotlin.system.measureTimeMillis
-
-
 fun fibonacci(n: Int): Int {
     if (n < 2) {
         return n
@@ -9,10 +6,9 @@ fun fibonacci(n: Int): Int {
 }
 
 
-var result = 0
-val elapsedMs = measureTimeMillis {
-    result = fibonacci(30)
-}
+val start = System.nanoTime()
+val result = fibonacci(30)
+val elapsedMs = (System.nanoTime() - start) / 1_000_000.0
 
 println("Result: $result")
-println("Time: $elapsedMs ms")
+println("Time: ${"%.3f".format(elapsedMs)} ms")
